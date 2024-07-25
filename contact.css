@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+
+.con {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.con>h1 {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 0;
+    font-size: 48px;
+}
+
+.container {
+    height: 60vh;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 20px;
+}
+
+.para {
+    width: 38%;
+}
+
+.para h2 {
+    color: #1fb6ff;
+    margin-bottom: 20px;
+    font-size: 28px;
+}   
+
+.para p {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.form {
+    padding: 5px 0;
+}
+
+.form-group .input {
+    color: white;
+    width: 25vw;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border: 2px solid rgb(49, 49, 49);
+    background-color: rgba(24, 25, 30, 0.541);
+    opacity: 0.5px;
+    border-radius: 8px;
+}
+
+.form .btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    margin: 10px 0;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form .clrbtn a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+.form .clrbtn{
+    background-color: #1fb4ff48;
+}
+
+.form h3 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.form .btn:hover {
+    transform: perspective(.8px) scale3d(0.97, .97, 2) translateZ(0) !important;
+
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    .con>h1 {
+        font-size: 35px;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 30px;
+    }
+
+    .para {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .para h2 {
+        font-size: 24px;
+    }
+
+    .para p {
+        line-height: 1.5;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .form {
+        width: 90%;
+        text-align: left;
+        padding: 0 20px;
+        margin-left: 30px;
+    }
+
+    .form-group .input {
+        width: 80%;
+    }
+
+    .form .btn {
+        width: 80%;
+
+    }
+}
